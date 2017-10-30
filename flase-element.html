@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>伪元素选择器</title>
+    <style>
+        #container:first-letter{
+            color:red;
+        }
+        #container:first-line{
+            color:yellow;
+        }
+        #container::selection{
+            background:greenyellow;
+        }
+    </style>
+</head>
+<body>
+ <div id="container">
+     CSS 有两个说不上常用的伪类 :before 和 :after，偶尔会被人用来添加些自定义格式什么的，<br>
+     但是它们的功用不仅于此。前几天发现了 Creative Link Effects <br>
+     意链接特效的页面，里面惊人的效果大量使用到的特性除了 transform 属性进行变形之外， <br>
+     就是接下来要介绍的这两个伪元素了。
+ </div>
+</body>
+</html>
