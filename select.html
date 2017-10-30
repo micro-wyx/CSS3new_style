@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>高级选择器</title>
+    <style>
+        div+div{color:red;}
+        #d1+#d2{
+            color:yellow;
+        }
+ p~div{
+     color:blue;
+ }
+
+        div[class~=heavy]{
+            color:palevioletred;;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">d1元素</div>
+    <div id="d2">D2元素</div>
+    <div id="d3">D3元素</div>
+    <div>
+        <p>我的菜单</p>
+        <div>我所选择的元素</div>
+    </div>
+  <div class="heavy important parent">这是一个具有多个选择器的元素</div>
+</body>
+</html>

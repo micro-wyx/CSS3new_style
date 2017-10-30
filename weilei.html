@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类选择器</title>
+    <style>
+      #content img{
+          display:none;
+
+        }
+        #content img:target{
+            display:block;
+        }
+    </style>
+</head>
+<div>
+    <a href="#img1">女孩</a>
+    <a href="#img2">小狗</a>
+    <a href="#img3">灯光</a>
+</div>
+<div id="content">
+    <img  id="img1" src="imge/1.jpg" alt="girl"><br>
+    <img  id="img2" src="imge/2.jpg" alt="dog"><br>
+    <img  id="img3" src="imge/3.jpg" alt="light"><br>
+</div>
+</body>
+</html>
