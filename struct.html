@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>结构伪类</title>
+    <style>
+        #tb{
+            border:1px solid black;
+            border-collapse:collapse;
+        }
+        #tb td{
+            border:1px solid black;
+
+        }
+        #tb td:first-child{
+            color:red;
+
+        }
+        /* 第二行第三列 */
+        #tb tr:nth-child(2) td:nth-child(3){
+            color:green;
+        }
+        #tb tr:not(first-child){
+            color:yellow;
+
+        }
+    </style>
+</head>
+<body>
+<table id="tb">
+    <tr>
+        <td>姓名</td>
+        <td>性别</td>
+        <td>身高</td>
+        <td>体重</td>
+    </tr>
+    <tr>
+        <td>孙悟空</td>
+        <td>男</td>
+        <td>183cm</td>
+        <td>90kg</td>
+    </tr>
+    <tr>
+        <td>猪八戒</td>
+        <td>男</td>
+        <td>178cm</td>
+        <td>80kg</td>
+    </tr>
+    <tr>
+        <td>唐僧</td>
+        <td>男</td>
+        <td>180cm</td>
+        <td>60kg</td>
+    </tr>
+</table>
+</body>
+</html>
