@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>内容生成</title>
+    <style>
+        p:before{
+            content:"子曰:";
+        }
+        p:after{
+            content:"-摘自《论语》";
+        }
+        #d1{
+            border:1px solid #000;
+
+        }
+        .c1,.c2,.c3{
+            width:200px;
+            height:200px;
+            background:red;
+            float:left;
+        }
+  /*      #d1:after{
+            content:" ";
+            display:block;
+            clear:both;
+        }*/
+        .clear:after{
+            content:" ";
+            display:block;
+            clear:both;
+        }
+        #d2{
+            width:200px;
+            height:300px;
+            background-color:orange;
+        }
+        #d2 .p1{width:100px;
+                height:100px;
+               background-color:yellow;
+            margin-top:30px;
+   }
+        #d2:before{
+            content:"";
+            display:table;
+        }
+    </style>
+</head>
+<body>
+    <p>三人行，必有我师焉</p>
+    <p>学而时习之，不亦说乎</p>
+    <p>有朋自远方来，不亦说乎</p>
+    <div id="d1" class="clear">
+    <div class="c1"></div>
+    <div class="c2"></div>
+    <div class="c3"></div>
+      <!--  <div style="clear:both"></div> -->
+    </div>
+    <div id="d2">
+        <div class="p1"></div>
+    </div>
+</body>
+</html>
