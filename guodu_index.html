@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>过渡</title>
+    <style>
+        #container{
+           width:200px;
+            height:200px;
+            border:1px solid #ddd;
+            background-color:red;
+            transition-property:background-color,border-radius;
+            transition-duration:5s;
+            transition-timing-function: linear;
+        }
+        #container:hover{
+            background-color:yellow;
+            border-radius:50%;
+
+        }
+        #scroll{
+            border:6px solid red;
+            background-color:yellow;
+            width:100px;
+            heigth:100px;
+            border-radius:50%;
+            font-size:40px;
+            font-weight:bold;
+            line-height:100px;
+            text-align:center;
+            color:black;
+            transition:transform 3s ease 2s;
+        }
+        #scroll:hover{
+            transform:translate(500px) rotate(1080deg) ;
+
+        }
+    </style>
+</head>
+<body>
+<div id="container"></div>
+<div id="scroll">喜</div>
+</body>
+</html>
