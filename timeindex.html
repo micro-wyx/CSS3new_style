@@ -4,39 +4,49 @@
     <meta charset="UTF-8">
     <title>钟表</title>
     <style>
+        @keyframes scroll{
+          0%{
+              transform:rotate(0deg)
+          }
+          100%{
+              transform:rotate(360deg)
+          }
+
+        }
      #container{
-         width:400px;
-         height:400px;
+         width:200px;
+         height:200px;
          border:6px solid deeppink;
          border-radius:50%;
          positon:relative;
 
      }
     #container .d1{
-           width:30px;
+           width:5px;
            height:70px;
-           border:transparent;
-           border-left:6px solid green;
-           position:absolute;
-           top:80px;
-           left:206px;
-        }
-    #container .d2{
-           width:30px;
-           height:100px;
-           border:transparent;
-           border-left:6px solid yellow;
+           background-color:green;
            position:absolute;
            top:50px;
-           left:206px;
-           opacity:0.8;
-        transform-origin:center bottom;
-        transition:transform 60s linear;
+           left:106px;
+        transform-orign:center bottom;
+        animation:scroll 3600s linear infinite;
 
         }
-     #container .d2:hover{transform:rotate(360deg);
+    #container .d2{
+           width:5px;
+           height:90px;
+           background-color:yellow;
+           position:absolute;
+           top:30px;
+           left:106px;
+           opacity:0.8;
+        transform-origin:center bottom;
+        animation:scroll 60s linear infinite;
 
-     }
+        }
+  /*   #container .d2:hover{transform:rotate(360deg);
+
+     }*/
     </style>
 </head>
 <body>
